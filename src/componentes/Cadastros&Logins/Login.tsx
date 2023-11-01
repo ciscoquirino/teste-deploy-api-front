@@ -36,7 +36,7 @@ function Login() {
         event.preventDefault()
 
         if (!validaCampos()) {
-            const response = await fetch('http://localhost:3001/login', {
+            const response = await fetch('https://teste-greenneat.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ export default function TabelasHistTransacoes() {
   const [transacoes, setTransacoes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/admTransacoes", {
+    fetch("https://teste-greenneat.onrender.com/admTransacoes", {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

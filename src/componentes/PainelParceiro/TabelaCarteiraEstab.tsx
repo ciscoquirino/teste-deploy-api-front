@@ -11,7 +11,7 @@ export default function TabelaCarteiraEstab() {
   const [estabData, setEstabData] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/listCarteira/${id}`, {
+    fetch(`https://teste-greenneat.onrender.com/listCarteira/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

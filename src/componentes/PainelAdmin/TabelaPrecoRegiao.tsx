@@ -24,7 +24,7 @@ export default function TabelaPrecopreco_regiao() {
   ]);
 
   useEffect(() => {
-    fetch(`http://localhost:3001/listPreco`, {
+    fetch(`https://teste-greenneat.onrender.com/listPreco`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export default function TabelaPrecopreco_regiao() {
 
           setData(updatedData);
 
-          fetch(`http://localhost:3001/editar-preco/${item.preco_id}`, {
+          fetch(`https://teste-greenneat.onrender.com/editar-preco/${item.preco_id}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',

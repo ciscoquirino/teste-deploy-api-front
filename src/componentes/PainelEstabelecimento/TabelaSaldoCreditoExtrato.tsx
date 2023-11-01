@@ -19,7 +19,7 @@ export default function TabelaSaldoCreditoExtrato() {
   }));
   */
   useEffect(() => {
-    fetch(`http://localhost:3001/transacoes-estabelecimento/${id}`, {
+    fetch(`https://teste-greenneat.onrender.com/transacoes-estabelecimento/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

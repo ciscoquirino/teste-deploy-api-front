@@ -16,7 +16,7 @@ export const TabelaRegiaoParceiros: React.FC = () => {
   const itemsPerPage: number = 9;
 
   useEffect(() => {
-    fetch("http://localhost:3001/regiaoParceiroMaisCedido", {
+    fetch("https://teste-greenneat.onrender.com/regiaoParceiroMaisCedido", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ export const TabelaRegiaoEstabelecimento: React.FC = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3001/regiaoEstabMaisRecebeu", {
+    fetch("https://teste-greenneat.onrender.com/regiaoEstabMaisRecebeu", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -224,7 +224,7 @@ export const TabelaMelhorPerformanceDescarte: React.FC = () => {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3001/regiaoEstabMaisOleoDescarte", {
+    fetch("https://teste-greenneat.onrender.com/regiaoEstabMaisOleoDescarte", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -332,7 +332,7 @@ export const TabelaParceirosMaisDoamCreditos: React.FC = () => {
   const itemsPerPage: number = 9;
 
   useEffect(() => {
-    fetch("http://localhost:3001/parceirosMaisCreditosDoados", { 
+    fetch("https://teste-greenneat.onrender.com/parceirosMaisCreditosDoados", { 
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -437,7 +437,7 @@ export const TabelaEstabMaiorVolDescartado: React.FC = () => {
   const itemsPerPage: number = 9;
 
   useEffect(() => {
-    fetch("http://localhost:3001/estabelecimentosMaisCreditosDoados", {
+    fetch("https://teste-greenneat.onrender.com/estabelecimentosMaisCreditosDoados", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

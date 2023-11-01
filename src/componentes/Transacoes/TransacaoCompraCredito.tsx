@@ -42,7 +42,7 @@ function TransacaoCompraCredito() {
     }).then((result) => {
       if (result.isConfirmed) {
         // O usuário confirmou, execute a função fetch
-        fetch(`http://localhost:3001/transacaoGreenneatParc/${idParceiro}`, {
+        fetch(`https://teste-greenneat.onrender.com/transacaoGreenneatParc/${idParceiro}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

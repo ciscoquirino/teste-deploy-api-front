@@ -31,7 +31,7 @@ function NavbarAdministrador() {
 
       const handleClick = () => {
         const id = localStorage.getItem('idAdministrador'); 
-        fetch(`http://localhost:3001/read-by-id-to-edit/${id}`)
+        fetch(`https://teste-greenneat.onrender.com/read-by-id-to-edit/${id}`)
           .then(response => {
             if (!response.ok) {
               throw new Error(`Erro na solicitação: ${response.status}`);

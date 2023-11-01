@@ -16,7 +16,7 @@ export default function TabelaRequisicoes() {
 
   const [requisicoes , setRequisicoes] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3001/getRequisicoesAprovar", {
+    fetch("https://teste-greenneat.onrender.com/getRequisicoesAprovar", {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ export default function TabelaRequisicoes() {
     const idParceiro = item.id_parceiro ;
     const valor = item.valor_comprado ;
 
-    fetch(`http://localhost:3001/aprovado/${idAcao}/${idParceiro}/${valor}` ,{
+    fetch(`https://teste-greenneat.onrender.com/aprovado/${idAcao}/${idParceiro}/${valor}` ,{
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export default function TabelaRequisicoes() {
 
   const handleRecusarClick = (item: any) => {
     const idAcao = item.acao_transacao_compra_id ;
-    fetch(`http://localhost:3001/recusado/${idAcao}`, {
+    fetch(`https://teste-greenneat.onrender.com/recusado/${idAcao}`, {
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json',

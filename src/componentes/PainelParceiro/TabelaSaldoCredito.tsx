@@ -11,7 +11,7 @@ export function TabelaCreditoContratado() {
   const id = localStorage.getItem('idParceiro');
 
   useEffect(() => {
-    fetch(`http://localhost:3001/creditos-contratados/${id}`, {
+    fetch(`https://teste-greenneat.onrender.com/creditos-contratados/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',
@@ -126,7 +126,7 @@ export function TabelaCreditoCedido() {
   }));
   */
   useEffect(() => {
-    fetch(`http://localhost:3001/transacoes-parceiro/${id}`, {
+    fetch(`https://teste-greenneat.onrender.com/transacoes-parceiro/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

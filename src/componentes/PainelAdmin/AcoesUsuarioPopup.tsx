@@ -140,7 +140,7 @@ export default function AdicionarUsuarioPopup({ open, onClose }: { open: boolean
       return
     }
     const email = formDataUserParc.parceiro_email
-    const emailCheckResponse = await fetch('http://localhost:3001/checkEmailParceiro', {
+    const emailCheckResponse = await fetch('https://teste-greenneat.onrender.com/checkEmailParceiro', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -161,7 +161,7 @@ export default function AdicionarUsuarioPopup({ open, onClose }: { open: boolean
 
     else {
       try {
-        const response = await fetch('http://localhost:3001/addParceiro', {
+        const response = await fetch('https://teste-greenneat.onrender.com/addParceiro', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -218,7 +218,7 @@ export default function AdicionarUsuarioPopup({ open, onClose }: { open: boolean
     }
 
     const email = formDataUserEstab.estabelecimento_email
-    const emailCheckResponse = await fetch('http://localhost:3001/checkEmailEstabelecimento', {
+    const emailCheckResponse = await fetch('https://teste-greenneat.onrender.com/checkEmailEstabelecimento', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -238,7 +238,7 @@ export default function AdicionarUsuarioPopup({ open, onClose }: { open: boolean
     }
 
     try {
-      const response = await fetch('http://localhost:3001/addEstabelecimento', {
+      const response = await fetch('https://teste-greenneat.onrender.com/addEstabelecimento', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

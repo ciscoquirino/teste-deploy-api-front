@@ -14,7 +14,7 @@ export default function PainelEstabelecimentoExtrato() {
   const id = localStorage.getItem('idEstabelecimento');
 
   useEffect(() => {
-    fetch(`http://localhost:3001/Estabelecimento/${id}`, {
+    fetch(`https://teste-greenneat.onrender.com/Estabelecimento/${id}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ export default function PainelEstabelecimentoExtrato() {
 
   //buscar dados do estabelecimento logado e setar o valor do saldo
   useEffect(() => {
-    fetch(`http://localhost:3001/Estabelecimento/${id}`, {
+    fetch(`https://teste-greenneat.onrender.com/Estabelecimento/${id}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',

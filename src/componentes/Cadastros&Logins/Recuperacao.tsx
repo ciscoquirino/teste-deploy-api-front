@@ -47,7 +47,7 @@ function Recuperacao() {
             return;
         }
         try {
-            const response = await fetch('http://localhost:3001/enviarToken', {
+            const response = await fetch('https://teste-greenneat.onrender.com/enviarToken', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

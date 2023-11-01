@@ -170,7 +170,7 @@ function CadastroParceiro() {
     }
 
 
-    const emailCheckResponse = await fetch('http://localhost:3001/checkEmailParceiro', {
+    const emailCheckResponse = await fetch('https://teste-greenneat.onrender.com/checkEmailParceiro', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -190,7 +190,7 @@ function CadastroParceiro() {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/addParceiro', {
+      const response = await fetch('https://teste-greenneat.onrender.com/addParceiro', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

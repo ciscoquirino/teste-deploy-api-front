@@ -12,7 +12,7 @@ export default function TabelaColeta() {
   const index = [1, 2, 3, 4];
 
   useEffect(() => {
-    fetch(`http://localhost:3001/transacoes-parceiro/${id}`, {
+    fetch(`https://teste-greenneat.onrender.com/transacoes-parceiro/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

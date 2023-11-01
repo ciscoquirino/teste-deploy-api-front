@@ -101,7 +101,7 @@ function EditarUsuario() {
 
         if (dadosMudaram) {
             if (idParceiro !== null) {
-                fetch(`http://localhost:3001/editar-usuario-comum-parceiro/${idParceiro}`, {
+                fetch(`https://teste-greenneat.onrender.com/editar-usuario-comum-parceiro/${idParceiro}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -125,7 +125,7 @@ function EditarUsuario() {
                 msgSucessoPost()
             }
             else {
-                fetch(`http://localhost:3001/editar-usuario-comum-estabelecimento/${idEstabelecimento}`, {
+                fetch(`https://teste-greenneat.onrender.com/editar-usuario-comum-estabelecimento/${idEstabelecimento}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',

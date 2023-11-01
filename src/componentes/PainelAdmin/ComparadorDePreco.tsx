@@ -67,7 +67,7 @@ function ComparadorPrecos() {
 
   //=====================GRUPO DE BOTÕES DO MENU LATERAL ESQUERDO COM NOMES DE REGIÕES DO BRASIL==========================
   const botaoNorteClick = () => {
-    fetch('http://localhost:3001/selectComparador/Norte')
+    fetch('https://teste-greenneat.onrender.com/selectComparador/Norte')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);
@@ -88,7 +88,7 @@ function ComparadorPrecos() {
   }
   const botaoSulClick = () => {
 
-    fetch('http://localhost:3001/selectComparador/Sul')
+    fetch('https://teste-greenneat.onrender.com/selectComparador/Sul')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);
@@ -108,7 +108,7 @@ function ComparadorPrecos() {
       });
   };
   const botaoSuldesteClick = () => {
-    fetch('http://localhost:3001/selectComparador/Sudeste')
+    fetch('https://teste-greenneat.onrender.com/selectComparador/Sudeste')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);
@@ -128,7 +128,7 @@ function ComparadorPrecos() {
       });
   };
   const botaoNordesteClick = () => {
-    fetch('http://localhost:3001/selectComparador/Nordeste')
+    fetch('https://teste-greenneat.onrender.com/selectComparador/Nordeste')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);
@@ -148,7 +148,7 @@ function ComparadorPrecos() {
       });
   };
   const botaoCentroOesteClick = () => {
-    fetch('http://localhost:3001/selectComparador/Centro-Oeste')
+    fetch('https://teste-greenneat.onrender.com/selectComparador/Centro-Oeste')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);

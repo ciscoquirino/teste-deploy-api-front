@@ -169,7 +169,7 @@ function CadastroEstabelecimento() {
       return;
     }
 
-    const emailCheckResponse = await fetch('http://localhost:3001/checkEmailEstabelecimento', {
+    const emailCheckResponse = await fetch('https://teste-greenneat.onrender.com/checkEmailEstabelecimento', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -188,7 +188,7 @@ function CadastroEstabelecimento() {
       return;
     }
     try {
-      const response = await fetch('http://localhost:3001/addEstabelecimento', {
+      const response = await fetch('https://teste-greenneat.onrender.com/addEstabelecimento', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
