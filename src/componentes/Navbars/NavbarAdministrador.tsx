@@ -1,7 +1,7 @@
 import React from 'react';
 import MenuLateralAdministrador from './NavbarAdministradorMenuLateral';
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import '../styles/NavbarAdministrador.css';
 
 function NavbarAdministrador() {
@@ -76,7 +76,7 @@ function NavbarAdministrador() {
                             <a className="nav-link text-white" href="/painel-administrador-usuario">Controle de Usuários</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="/painel-administrador-requisicoes">Requisições</a>
+                            <NavLink className="nav-link text-white" to="/painel-administrador-requisicoes">Requisições</NavLink>
                         </li>
 
                         <li className="nav-item">
