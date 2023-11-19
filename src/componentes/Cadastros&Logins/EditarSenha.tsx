@@ -86,7 +86,7 @@ function EditarSenha() {
             return;
         }
 
-        fetch(`https://teste-greenneat.onrender.com/editSenhaRec/${idUser}/${tipo}`, {
+        fetch(`https://teste-deploy-api-ten.vercel.app/editSenhaRec/${idUser}/${tipo}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

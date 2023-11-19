@@ -11,7 +11,7 @@ export function TabelaCreditoContratado() {
   const id = localStorage.getItem('idParceiro');
 
   useEffect(() => {
-    fetch(`https://teste-greenneat.onrender.com/creditos-contratados/${id}`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/creditos-contratados/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',
@@ -126,7 +126,7 @@ export function TabelaCreditoCedido() {
   }));
   */
   useEffect(() => {
-    fetch(`https://teste-greenneat.onrender.com/transacoes-parceiro/${id}`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/transacoes-parceiro/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

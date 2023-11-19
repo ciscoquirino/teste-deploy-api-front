@@ -47,7 +47,7 @@ function Recuperacao() {
             return;
         }
         try {
-            const response = await fetch('https://teste-greenneat.onrender.com/enviarToken', {
+            const response = await fetch('https://teste-deploy-api-ten.vercel.app/enviarToken', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

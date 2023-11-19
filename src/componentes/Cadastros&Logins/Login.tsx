@@ -36,7 +36,7 @@ function Login() {
         event.preventDefault()
 
         if (!validaCampos()) {
-            const response = await fetch('https://teste-greenneat.onrender.com/login', {
+            const response = await fetch('https://teste-deploy-api-ten.vercel.app/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

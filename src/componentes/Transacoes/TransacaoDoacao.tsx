@@ -54,7 +54,7 @@ function TransacaoDoacao() {
     }).then((result) => {
       if (result.isConfirmed) {
         // O usuário confirmou, execute a função fetch
-        fetch(`https://teste-greenneat.onrender.com/transacaoParceiroEstab/${idParceiro}`, {
+        fetch(`https://teste-deploy-api-ten.vercel.app/transacaoParceiroEstab/${idParceiro}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -68,7 +68,7 @@ function TransacaoDoacao() {
           if (response.status === 500) {
             Swal.fire("Erro", "Saldo Insuficiente para realizar essa transação.", "error");
           } if (response.status === 501) {
-            fetch("https://teste-greenneat.onrender.com/insertAcaoTransacoes", {
+            fetch("https://teste-deploy-api-ten.vercel.app/insertAcaoTransacoes", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -94,7 +94,7 @@ function TransacaoDoacao() {
     const idParceiro = localStorage.getItem('idParceiro')
   
     // Fazer uma chamada de API para obter os estabelecimentos
-    fetch(`https://teste-greenneat.onrender.com/listCarteira/${idParceiro}`)
+    fetch(`https://teste-deploy-api-ten.vercel.app/listCarteira/${idParceiro}`)
       .then((response) => response.json())
       .then((data) => {
         // Armazenar os dados completos dos estabelecimentos

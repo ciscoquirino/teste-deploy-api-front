@@ -11,7 +11,7 @@ export default function TabelasHistTransacoes() {
   const [transacoes, setTransacoes] = useState([]);
 
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/admTransacoes", {
+    fetch("https://teste-deploy-api-ten.vercel.app/admTransacoes", {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

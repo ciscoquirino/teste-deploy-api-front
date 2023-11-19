@@ -54,7 +54,7 @@ export default function DashboardRanking() {
 
   const fetchChartData = async (route: string) => {
     try {
-      const response = await fetch(`https://teste-greenneat.onrender.com/${route}`, {
+      const response = await fetch(`https://teste-deploy-api-ten.vercel.app/${route}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

@@ -170,7 +170,7 @@ function CadastroParceiro() {
     }
 
 
-    const emailCheckResponse = await fetch('https://teste-greenneat.onrender.com/checkEmailParceiro', {
+    const emailCheckResponse = await fetch('https://teste-deploy-api-ten.vercel.app/checkEmailParceiro', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -190,7 +190,7 @@ function CadastroParceiro() {
     }
 
     try {
-      const response = await fetch('https://teste-greenneat.onrender.com/addParceiro', {
+      const response = await fetch('https://teste-deploy-api-ten.vercel.app/addParceiro', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

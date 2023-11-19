@@ -11,7 +11,7 @@ export default function TabelaCarteiraEstab() {
   const [estabData, setEstabData] = useState([]);
 
   useEffect(() => {
-    fetch(`https://teste-greenneat.onrender.com/listCarteira/${id}`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/listCarteira/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

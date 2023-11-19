@@ -27,7 +27,7 @@ function Token() {
     const handleReenviarToken = async () => {
         try {
             const email = localStorage.getItem('email')
-            const response = await fetch('https://teste-greenneat.onrender.com/enviarToken', {
+            const response = await fetch('https://teste-deploy-api-ten.vercel.app/enviarToken', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -56,7 +56,7 @@ function Token() {
 
             const emailEDIT = localStorage.getItem('email')
 
-            fetch(`https://teste-greenneat.onrender.com/verifica-email/${emailEDIT}`)
+            fetch(`https://teste-deploy-api-ten.vercel.app/verifica-email/${emailEDIT}`)
             .then(response => {
               if (!response.ok) {
                 throw new Error(`Erro na solicitação: ${response.status}`);
@@ -77,7 +77,7 @@ function Token() {
             });
 
             try {
-                const response = await fetch('https://teste-greenneat.onrender.com/VerificarToken', {
+                const response = await fetch('https://teste-deploy-api-ten.vercel.app/VerificarToken', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

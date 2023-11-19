@@ -14,7 +14,7 @@ export default function PainelEstabelecimentoExtrato() {
   const id = localStorage.getItem('idEstabelecimento');
 
   useEffect(() => {
-    fetch(`https://teste-greenneat.onrender.com/Estabelecimento/${id}`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/Estabelecimento/${id}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ export default function PainelEstabelecimentoExtrato() {
 
   //buscar dados do estabelecimento logado e setar o valor do saldo
   useEffect(() => {
-    fetch(`https://teste-greenneat.onrender.com/Estabelecimento/${id}`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/Estabelecimento/${id}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',

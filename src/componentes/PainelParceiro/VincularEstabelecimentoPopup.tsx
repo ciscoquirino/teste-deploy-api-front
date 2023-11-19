@@ -19,7 +19,7 @@ export default function VincularEstabelecimento({ open, onClose }: { open: boole
 
   const [estabData, setEstabData] = useState([]);
   useEffect(() => {
-    fetch(`https://teste-greenneat.onrender.com/listSemVinculo/${id}`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/listSemVinculo/${id}`, {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ export default function VincularEstabelecimento({ open, onClose }: { open: boole
       },
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch('https://teste-greenneat.onrender.com/vincular', {
+        fetch('https://teste-deploy-api-ten.vercel.app/vincular', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

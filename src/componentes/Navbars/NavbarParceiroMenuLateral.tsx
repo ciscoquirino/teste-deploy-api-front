@@ -49,7 +49,7 @@ const MenuLateralParceiro: React.FC = () => {
 
   const handleClick = () => {
     const id = localStorage.getItem('idParceiro'); // Substitua pelo ID correto do parceiro
-    fetch(`https://teste-greenneat.onrender.com/read-by-id-to-edit/${id}`)
+    fetch(`https://teste-deploy-api-ten.vercel.app/read-by-id-to-edit/${id}`)
       .then(response => {
         if (!response.ok) {
           throw new Error(`Erro na solicitação: ${response.status}`);

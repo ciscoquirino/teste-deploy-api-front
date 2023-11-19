@@ -169,7 +169,7 @@ function CadastroEstabelecimento() {
       return;
     }
 
-    const emailCheckResponse = await fetch('https://teste-greenneat.onrender.com/checkEmailEstabelecimento', {
+    const emailCheckResponse = await fetch('https://teste-deploy-api-ten.vercel.app/checkEmailEstabelecimento', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -188,7 +188,7 @@ function CadastroEstabelecimento() {
       return;
     }
     try {
-      const response = await fetch('https://teste-greenneat.onrender.com/addEstabelecimento', {
+      const response = await fetch('https://teste-deploy-api-ten.vercel.app/addEstabelecimento', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

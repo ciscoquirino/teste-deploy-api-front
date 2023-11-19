@@ -14,7 +14,7 @@ export default function TabelaRequisicoes() {
 
   const [requisicoes , setRequisicoes] = useState([]);
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/getRequisicoesRecusadas", {
+    fetch("https://teste-deploy-api-ten.vercel.app/getRequisicoesRecusadas", {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',

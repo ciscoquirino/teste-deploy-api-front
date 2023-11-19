@@ -32,7 +32,7 @@ function NavbarEstabelecimento() {
       const handleClick = () => {
         const id = localStorage.getItem('idEstabelecimento');
         const tipo = localStorage.getItem('tipo')
-        fetch(`https://teste-greenneat.onrender.com/read-by-id-to-edit/${id}/${tipo}`)
+        fetch(`https://teste-deploy-api-ten.vercel.app/read-by-id-to-edit/${id}/${tipo}`)
           .then(response => {
             if (!response.ok) {
               throw new Error(`Erro na solicitação: ${response.status}`);

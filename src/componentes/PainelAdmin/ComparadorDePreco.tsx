@@ -67,7 +67,7 @@ function ComparadorPrecos() {
 
   //=====================GRUPO DE BOTÕES DO MENU LATERAL ESQUERDO COM NOMES DE REGIÕES DO BRASIL==========================
   const botaoNorteClick = () => {
-    fetch('https://teste-greenneat.onrender.com/selectComparador/Norte')
+    fetch('https://teste-deploy-api-ten.vercel.app/selectComparador/Norte')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);
@@ -88,7 +88,7 @@ function ComparadorPrecos() {
   }
   const botaoSulClick = () => {
 
-    fetch('https://teste-greenneat.onrender.com/selectComparador/Sul')
+    fetch('https://teste-deploy-api-ten.vercel.app/selectComparador/Sul')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);
@@ -108,7 +108,7 @@ function ComparadorPrecos() {
       });
   };
   const botaoSuldesteClick = () => {
-    fetch('https://teste-greenneat.onrender.com/selectComparador/Sudeste')
+    fetch('https://teste-deploy-api-ten.vercel.app/selectComparador/Sudeste')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);
@@ -128,7 +128,7 @@ function ComparadorPrecos() {
       });
   };
   const botaoNordesteClick = () => {
-    fetch('https://teste-greenneat.onrender.com/selectComparador/Nordeste')
+    fetch('https://teste-deploy-api-ten.vercel.app/selectComparador/Nordeste')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);
@@ -148,7 +148,7 @@ function ComparadorPrecos() {
       });
   };
   const botaoCentroOesteClick = () => {
-    fetch('https://teste-greenneat.onrender.com/selectComparador/Centro-Oeste')
+    fetch('https://teste-deploy-api-ten.vercel.app/selectComparador/Centro-Oeste')
       .then(response => response.json())
       .then(data => {
         const precoOleoVirgem = parseFloat(data.preco_oleo_virgem);

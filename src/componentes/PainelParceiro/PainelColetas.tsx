@@ -14,7 +14,7 @@ export default function PainelParceiroColetas() {
 
   
   useEffect(() => {
-    fetch(`https://teste-greenneat.onrender.com/Parceiro/${id}`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/Parceiro/${id}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',

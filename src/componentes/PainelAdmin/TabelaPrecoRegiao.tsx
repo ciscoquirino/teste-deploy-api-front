@@ -24,7 +24,7 @@ export default function TabelaPrecopreco_regiao() {
   ]);
 
   useEffect(() => {
-    fetch(`https://teste-greenneat.onrender.com/listPreco`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/listPreco`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export default function TabelaPrecopreco_regiao() {
 
           setData(updatedData);
 
-          fetch(`https://teste-greenneat.onrender.com/editar-preco/${item.preco_id}`, {
+          fetch(`https://teste-deploy-api-ten.vercel.app/editar-preco/${item.preco_id}`, {
             method: 'PUT',
             headers: {
               'Content-Type': 'application/json',

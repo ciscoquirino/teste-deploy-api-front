@@ -16,7 +16,7 @@ export const TabelaRegiaoParceiros: React.FC = () => {
   const itemsPerPage: number = 9;
 
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/regiaoParceiroMaisCedido", {
+    fetch("https://teste-deploy-api-ten.vercel.app/regiaoParceiroMaisCedido", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ export const TabelaRegiaoEstabelecimento: React.FC = () => {
   };
 
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/regiaoEstabMaisRecebeu", {
+    fetch("https://teste-deploy-api-ten.vercel.app/regiaoEstabMaisRecebeu", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -224,7 +224,7 @@ export const TabelaMelhorPerformanceDescarte: React.FC = () => {
   };
 
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/regiaoEstabMaisOleoDescarte", {
+    fetch("https://teste-deploy-api-ten.vercel.app/regiaoEstabMaisOleoDescarte", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -332,7 +332,7 @@ export const TabelaParceirosMaisDoamCreditos: React.FC = () => {
   const itemsPerPage: number = 9;
 
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/parceirosMaisCreditosDoados", { 
+    fetch("https://teste-deploy-api-ten.vercel.app/parceirosMaisCreditosDoados", { 
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -437,7 +437,7 @@ export const TabelaEstabMaiorVolDescartado: React.FC = () => {
   const itemsPerPage: number = 9;
 
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/estabelecimentosMaisCreditosDoados", {
+    fetch("https://teste-deploy-api-ten.vercel.app/estabelecimentosMaisCreditosDoados", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

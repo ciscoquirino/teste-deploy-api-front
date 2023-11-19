@@ -16,7 +16,7 @@ export default function TabelaRequisicoes() {
 
   const [requisicoes , setRequisicoes] = useState([]);
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/getRequisicoesAprovar", {
+    fetch("https://teste-deploy-api-ten.vercel.app/getRequisicoesAprovar", {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ export default function TabelaRequisicoes() {
     const idParceiro = item.id_parceiro ;
     const valor = item.valor_comprado ;
 
-    fetch(`https://teste-greenneat.onrender.com/aprovado/${idAcao}/${idParceiro}/${valor}` ,{
+    fetch(`https://teste-deploy-api-ten.vercel.app/aprovado/${idAcao}/${idParceiro}/${valor}` ,{
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export default function TabelaRequisicoes() {
 
   const handleRecusarClick = (item: any) => {
     const idAcao = item.acao_transacao_compra_id ;
-    fetch(`https://teste-greenneat.onrender.com/recusado/${idAcao}`, {
+    fetch(`https://teste-deploy-api-ten.vercel.app/recusado/${idAcao}`, {
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json',

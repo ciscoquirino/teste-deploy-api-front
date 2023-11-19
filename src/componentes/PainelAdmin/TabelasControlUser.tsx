@@ -23,7 +23,7 @@ export default function TabelasControlUser() {
 
       if (tipo === 'Parceiro') {
 
-        fetch(`https://teste-greenneat.onrender.com/read-by-id-to-edit-admin/${razaoSocial}/${tipo}`)
+        fetch(`https://teste-deploy-api-ten.vercel.app/read-by-id-to-edit-admin/${razaoSocial}/${tipo}`)
         .then(response => {
           if (!response.ok) {
             throw new Error(`Erro na solicitação: ${response.status}`);
@@ -42,7 +42,7 @@ export default function TabelasControlUser() {
         });
       } else if (tipo === 'Estabelecimento') {
 
-        fetch(`https://teste-greenneat.onrender.com/read-by-id-to-edit-admin/${razaoSocial}/${tipo}`)
+        fetch(`https://teste-deploy-api-ten.vercel.app/read-by-id-to-edit-admin/${razaoSocial}/${tipo}`)
         .then(response => {
           if (!response.ok) {
             throw new Error(`Erro na solicitação: ${response.status}`);
@@ -61,7 +61,7 @@ export default function TabelasControlUser() {
         });
       } else if (tipo === 'Administrador') {
 
-        fetch(`https://teste-greenneat.onrender.com/read-by-id-to-edit-admin/${razaoSocial}/${tipo}`)
+        fetch(`https://teste-deploy-api-ten.vercel.app/read-by-id-to-edit-admin/${razaoSocial}/${tipo}`)
         .then(response => {
           if (!response.ok) {
             throw new Error(`Erro na solicitação: ${response.status}`);
@@ -112,7 +112,7 @@ export default function TabelasControlUser() {
       cancelButtonText: 'Cancelar',
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`hhttps://teste-greenneat.onrender.com/deletar-users/${razaoSocial}/${tipoUsuario}`, {
+        fetch(`hhttps://teste-deploy-api-ten.vercel.app/deletar-users/${razaoSocial}/${tipoUsuario}`, {
           method: 'DELETE'
         })
         .then((response) => response.json())
@@ -148,7 +148,7 @@ export default function TabelasControlUser() {
 
   const [user, setUser] = useState([]);
   useEffect(() => {
-    fetch("https://teste-greenneat.onrender.com/listarusuarios", {
+    fetch("https://teste-deploy-api-ten.vercel.app/listarusuarios", {
       method: "GET",
        headers: {
         'Content-Type': 'application/json',
